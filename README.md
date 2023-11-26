@@ -1,8 +1,9 @@
 # GrupoSiete
 🚺 Proyecto portal de recursos para victimas de violencia de genero - Proyecto Inkua 🌿
 
-La violencia de género es un problema global que afecta a personas de todas las edades, géneros y comunidades. Nuestro proyecto, es una iniciativa comprometida con la erradicación de la violencia de género en nuestra sociedad. Su importancia radica en la necesidad imperante de poner fin a un ciclo de abuso que causa sufrimiento físico y emocional a millones de personas en todo el mundo.
-Este proyecto tiene como objetivo principal concientizar a la sociedad sobre la gravedad de la violencia de género, proporcionar apoyo integral a las víctimas y trabajar en la prevención activa. Creemos que la educación, la sensibilización y la movilización son herramientas poderosas para el cambio social y cultural necesario.
+Bienvenido a Brave Violet, donde la tecnología se convierte en un puente hacia un futuro libre de violencia de género. Somos un grupo de estudiantes comprometidos en utilizar la innovación para enfrentar una problemática persistente. Más que una plataforma, Brave Violet es un refugio digital, ofreciendo información, recursos y apoyo emocional.
+
+Nuestra visión va más allá de la prevención; buscamos construir una comunidad solidaria y empoderada. Cada clic en nuestra plataforma es un paso hacia un mundo donde la violencia de género sea historia. Únete a nosotros en esta misión de transformación y construcción de un mañana más seguro.
 
 
 ![logoappVG3](https://github.com/ana-zn/Grupo7/assets/112661380/a80d89aa-c284-4062-9719-aace5c5e4c06)
