@@ -6,7 +6,8 @@ Bienvenido a Brave Violet, donde la tecnología se convierte en un puente hacia 
 Nuestra visión va más allá de la prevención; buscamos construir una comunidad solidaria y empoderada. Cada clic en nuestra plataforma es un paso hacia un mundo donde la violencia de género sea historia. Únete a nosotros en esta misión de transformación y construcción de un mañana más seguro.
 
 
-![logoappVG3](https://github.com/ana-zn/Grupo7/assets/112661380/a80d89aa-c284-4062-9719-aace5c5e4c06)
+![BraveViolet_Mesa de trabajo 1](https://github.com/ana-zn/Grupo7/assets/113073076/01472dad-2a56-438f-89ac-aab8cb4cc169)
+
 
 
 
