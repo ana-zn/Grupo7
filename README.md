@@ -1,7 +1,7 @@
 # GrupoSiete
 🚺 Proyecto portal de recursos para victimas de violencia de genero - Proyecto Inkua 🌿
 
-Bienvenido a Brave Violet, donde la tecnología se convierte en un puente hacia un futuro libre de violencia de género. Somos un grupo de estudiantes comprometidos en utilizar la innovación para enfrentar una problemática persistente. Más que una plataforma, Brave Violet es un refugio digital, ofreciendo información, recursos y apoyo emocional.
+Bienvenidos a Brave Violet, donde la tecnología se convierte en un puente hacia un futuro libre de violencia de género. Somos un grupo de estudiantes comprometidos en utilizar la innovación para enfrentar una problemática persistente. Más que una plataforma, Brave Violet es un refugio digital, ofreciendo información, recursos y apoyo emocional.
 
 Nuestra visión va más allá de la prevención; buscamos construir una comunidad solidaria y empoderada. Cada clic en nuestra plataforma es un paso hacia un mundo donde la violencia de género sea historia. Únete a nosotros en esta misión de transformación y construcción de un mañana más seguro.
 
