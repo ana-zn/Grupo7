@@ -1,0 +1,975 @@
+/* --------------------------------- Estilos Globales --------------------------------- */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:  'Roboto', sans-serif;
+    background-color: #fff;
+}
+.top {
+    background-color: #4E1945;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.menu{
+    width: 100%; 
+    top:0; 
+    left:0; 
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* --------------------------------- Menú (Navbar) --------------------------------- */
+.menu .navbar{
+    width: 50%; 
+}
+.menu .navbar .menu-list .menu-item{
+    width: 20%;
+    position: relative; 
+    float:left;  
+    text-align: center;
+}
+.menu .navbar .menu-list .menu-item .menu-link {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px 0 10px 0; 
+    color: #3E083F;
+    display: block;
+    font-weight: 600;
+   
+}
+.navbar .menu-link::after{
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #3E083F; 
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s
+}
+
+.navbar .menu-link:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* --------------------------------- Barra de busqueda (Navsearch) --------------------------------- */
+.search-bar {
+    width: 340px;
+    height: 35px;
+    background: transparent;
+    border: 3px solid #3E083F;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    margin: 0 20 0 325px;
+}
+/* ----------------------- Ingreso de Texto de Barra de Busqueda -------------------------- */
+.search-bar input{
+    width: 100%; 
+    background: transparent;
+    border: none; 
+    outline: none;
+    font-size: 16px;
+    color:  #3E083F; 
+    padding-left: 10px;
+}
+.search-bar input::placeholder{
+    color: #3E083F; 
+}
+/* --------------------------------- Botón de Búsqueda --------------------------------- */
+.search-bar button{
+    width: 40px; 
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+.search-bar button i{
+    font-size: 22px;
+    color:  #3E083F;
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width:25px ;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: right;
+    margin: 0px 40px 0px 610px;
+}
+.element-recursos {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.element-recursos .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1691px;
+    position: relative;
+}
+
+.element-recursos .overlap {
+    position: absolute;
+    width: 420px;
+    height: 560px;  
+    top: 257px;
+    left: 65px;
+    border-radius: 30px;
+}
+
+.element-recursos .text-wrapper {
+    position: absolute;
+    width: 291px;
+    top: 15px;
+    left: 37px;
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #85296c;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .arrow-to-down-left {
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    top: 81px;
+    left: 328px;
+}
+
+.element-recursos .brinda-atenci-n {
+    position: absolute;
+    width: 351px;
+    top: 212px;
+    left: 37px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .component {
+    position: absolute;
+    width: 232px;
+    height: 33px;
+    top: 323px;
+    left: 37px;
+}
+
+.element-recursos .l-nea-nacional {
+    position: absolute;
+    width: 177px;
+    height: 23px;
+    top: 5px;
+    left: 55px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .span {
+    color: #000000;
+}
+
+.element-recursos .text-wrapper-2 {
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #85296c;
+}
+
+.element-recursos .icon-alternate-phone {
+    position: absolute;
+    width: 30px;
+    height: 33px;
+    top: 0;
+    left: 0;
+}
+
+.element-recursos .component-2 {
+    position: absolute;
+    width: 340px;
+    height: 41px;
+    top: 371px;
+    left: 37px;
+}
+
+.element-recursos .element {
+    position: absolute;
+    width: 285px;
+    height: 41px;
+    top: -5px;
+    left: 55px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .text-wrapper-3 {
+    font-weight: 500;
+    top: px;
+}
+
+.element-recursos .icon-whatsapp {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    left: 0;
+}
+
+.element-recursos .component-3 {
+    position: absolute;
+    width: 383px;
+    height: 60px;
+    top: 413px;
+    left: 24px;
+}
+
+.element-recursos .text-wrapper-5 {
+    position: absolute;
+    width: 315px;
+    height: 23px;
+    top: 14px;
+    left: 68px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .vector {
+    position: absolute;
+    width: 43px;
+    height: 30px;
+    top: 12px;
+    left: 8px;
+}
+
+.element-recursos .rectangle {
+    width: 420px;
+    height: 560px;
+    top: 0;
+    border-radius: 30px;
+    border: 4px solid;
+    border-color: #85296c;
+    position: absolute;
+    left: 0;
+}
+
+.element-recursos .div-wrapper:hover {
+    transform: scale(1.1); 
+    transform-origin: center; 
+}
+
+.element-recursos .div-wrapper {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 474px;
+    left: 103px;
+    background-color: #85296c;
+    border-radius: 30px;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out; 
+}
+
+.element-recursos .text-wrapper-6 {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 16px;
+    left: 0;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out; 
+}
+.element-recursos .text-wrapper-6:hover {
+    transform: scale(1.1); 
+    transform-origin: center; 
+}
+
+
+.element-recursos .group {
+    position: absolute;
+    width: 420px;
+    height: 560px;
+    top: 257px;
+    left: 510px;
+}
+
+.element-recursos .component-4 {
+    position: relative;
+    height: 560px;
+    border-radius: 30px;
+    border: 4px solid;
+    border-color: #85296c;
+}
+
+.element-recursos .text-wrapper-7 {
+    position: absolute;
+    width: 291px;
+    top: 10px;
+    left: 33px;
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #85296c;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .img {
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    top: 77px;
+    left: 324px;
+}
+
+.element-recursos .p {
+    position: absolute;
+    width: 351px;
+    top: 205px;
+    left: 33px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .component-5 {
+    position: absolute;
+    width: 232px;
+    height: 33px;
+    top: 319px;
+    left: 33px;
+}
+
+.element-recursos .component-6 {
+    position: absolute;
+    width: 340px;
+    height: 41px;
+    top: 367px;
+    left: 33px;
+}
+
+.element-recursos .component-7 {
+    position: absolute;
+    width: 383px;
+    height: 60px;
+    top: 409px;
+    left: 20px;
+}
+
+.element-recursos .component-8:hover {
+    transform: scale(1.1); 
+    transform-origin: center; 
+}
+.element-recursos .component-8 {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 470px;
+    left: 99px;
+    background-color: #85296c;
+    border-radius: 30px;
+}
+
+.element-recursos .component-9 {
+    position: absolute;
+    width: 420px;
+    height: 560px;
+    top: 257px;
+    left: 955px;
+    border-radius: 30px;
+    border: 4px solid;
+    border-color: #85296c;
+}
+
+.element-recursos .text-wrap {
+    position: absolute;
+    width: 291px;
+    top: 15px;
+    left: 33px;
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #85296c;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 35px;
+}
+
+.element-recursos .text-wrapper-8 {
+    position: absolute;
+    width: 370px;
+    height: 105px;
+    top: 205px;
+    left: 33px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .component-10 {
+    position: absolute;
+    width: 420px;
+    height: 560px;
+    top: 849px;
+    left: 65px;
+    border-radius: 30px;
+    border: 4px solid;
+    border-color: #85296c;
+}
+
+.element-recursos .text-wrap2 {
+    position: absolute;
+    width: 291px;
+    top: 15px;
+    left: 33px;
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #85296c;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .text-wrapper-9 {
+    position: absolute;
+    width: 351px;
+    height: 87px;
+    top: 180px;
+    left: 33px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .component-11 {
+    position: absolute;
+    width: 420px;
+    height: 560px;
+    top: 849px;
+    left: 510px;
+    border-radius: 30px;
+    border: 4px solid;
+    border-color: #85296c;
+}
+
+.element-recursos .component-12 {
+    position: absolute;
+    width: 420px;
+    height: 560px;
+    top: 849px;
+    left: 955px;
+    border-radius: 30px;
+    border: 4px solid;
+    border-color: #85296c;
+}
+.element-recursos .text-wrap3 {
+    position: absolute;
+    width: 291px;
+    top: 15px;
+    left: 33px;
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #85296c;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+.element-recursos .brinda-atenci-n-2 {
+    position: absolute;
+    width: 351px;
+    top: 203px;
+    left: 33px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .contactos-tiles {
+    position: absolute;
+    width: 950px;
+    top: 110px;
+    left: 100px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: transparent;
+    font-size: 60px;
+    letter-spacing: 0.6px;
+    word-spacing: -5px;
+    line-height: 65.3px;
+    white-space: nowrap;
+}
+
+.element-recursos .text-wrapper-10 {
+    color: #85296c;
+}
+
+.element-recursos .text-wrapper-11 {
+    color: #263238;
+}
+
+.color-letra {
+    color: #85296c;     ; 
+}
+
+.element-recursos .overlap-group {
+    position: absolute;
+    width: 900px;
+    height: 45px;
+    top: 61px;
+    left: 78px;
+}
+
+.element-recursos .line {
+    position: absolute;
+    width: 110px;
+    height: 5px;
+    top: 40px;
+    left: 170px;
+}
+
+.element-recursos .barra-de-opciones {
+    position: absolute;
+    width: 900px;
+    height: 45px;
+    top: 0;
+    left: 0;
+}
+
+.element-recursos .navbar {
+    position: relative;
+    height: 42px;
+}
+
+.element-recursos .vector-2 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 6px;
+    left: 330px;
+}
+
+.element-recursos .rectangle-2 {
+    width: 370px;
+    height: 35px;
+    top: 0;
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #4b1844;
+    position: absolute;
+    left: 0;
+}
+
+.element-recursos .component-wrapper {
+    position: absolute;
+    width: 1440px;
+    height: 52px;
+    top: 0;
+    left: 0;
+    background-color: #4e1945;
+}
+
+.element-recursos .component-13 {
+    position: absolute;
+    width: 157px;
+    height: 40px;
+    top: 10px;
+    left: 641px;
+}
+
+.element-recursos .overlap-2 {
+    position: absolute;
+    width: 1440px;
+    height: 234px;
+    top: 1457px;
+    left: 0;
+}
+
+.element-recursos .rectangle-3 {
+    width: 1440px;
+    height: 230px;
+    top: 3px;
+    background-color: #b895c5;
+    position: absolute;
+    left: 0;
+}
+
+.element-recursos .rectangle-4 {
+    width: 1440px;
+    height: 35px;
+    top: 199px;
+    background-color: #4e1945;
+    position: absolute;
+    left: 0;
+}
+
+.element-recursos .text-wrapper-14 {
+    position: absolute;
+    width: 1440px;
+    height: 35px;
+    top: 198px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .capa {
+    position: absolute;
+    width: 170px;
+    height: 160px;
+    top: 0;
+    left: 154px;
+}
+
+.element-recursos .capa-2 {
+    position: absolute;
+    width: 120px;
+    height: 18px;
+    top: 134px;
+    left: 175px;
+}
+
+.element-recursos .component-14 {
+    position: absolute;
+    width: 25px;
+    height: 95px;
+    top: 77px;
+    left: 435px;
+}
+
+.element-recursos .text-wrapper-15 {
+    position: absolute;
+    width: 192px;
+    top: 33px;
+    left: 435px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #4e1945;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .component-15 {
+    position: absolute;
+    width: 184px;
+    height: 88px;
+    top: 81px;
+    left: 475px;
+}
+
+.element-recursos .text-wrapper-16 {
+    position: absolute;
+    width: 184px;
+    height: 18px;
+    top: -1px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #4b1844;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.element-recursos .text-wrapper-17 {
+    width: 184px;
+    top: 34px;
+    position: absolute;
+    height: 18px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #4b1844;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.element-recursos .text-wrapper-18 {
+    width: 184px;
+    top: 69px;
+    position: absolute;
+    height: 18px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #4b1844;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.element-recursos .component-16 {
+    position: absolute;
+    width: 25px;
+    height: 95px;
+    top: 78px;
+    left: 741px;
+}
+
+.element-recursos .text-wrapper-19 {
+    position: absolute;
+    width: 192px;
+    top: 33px;
+    left: 741px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #4e1945;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .component-17 {
+    position: absolute;
+    width: 184px;
+    height: 88px;
+    top: 81px;
+    left: 781px;
+}
+
+.element-recursos .line-2 {
+    position: absolute;
+    width: 2px;
+    height: 98px;
+    top: 75px;
+    left: 1005px;
+}
+
+.element-recursos .text-wrapper-20 {
+    position: absolute;
+    width: 192px;
+    top: 33px;
+    left: 1047px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #4e1945;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element-recursos .component-18 {
+    position: absolute;
+    width: 184px;
+    height: 88px;
+    top: 81px;
+    left: 1047px;
+}
+
+.element-recursos .component-19 {
+    position: absolute;
+    width: 93px;
+    height: 88px;
+    top: 80px;
+    left: 1194px;
+}
+
+.element-recursos .brave-violet {
+    width: 93px;
+    top: -1px;
+    position: absolute;
+    height: 18px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #4b1844;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.element-recursos .brave-violet-2 {
+    width: 93px;
+    top: 34px;
+    position: absolute;
+    height: 18px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #4b1844;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.element-recursos .brave-violet-3 {
+    position: fixed;
+    width: 950px;
+    top: 0;
+    left: 0;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: transparent;
+    font-size: 60px;
+    letter-spacing: 0.6px;
+    line-height: 65.3px;
+    white-space: nowrap;
+}
+
+.element-recursos .line-3 {
+    position: absolute;
+    width: 2px;
+    height: 98px;
+    top: 78px;
+    left: 699px;
+}
+
+/* --------------------------------- Pie de pagina --------------------------------- */
+.footer{
+    padding: 30px 0;
+    background-color: #B895C5;  
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.footer img {
+    margin: 0px 0px 30px 50px; /* Puedes ajustar el valor según tus necesidades */
+}
+/* Contenido del pie de página */
+.footer-content{
+    display: flex;
+    justify-content: flex-end; 
+    text-align: center;
+    margin: 0px 100px 0px 100px ; 
+    width: 100%; 
+    
+}
+
+/* Enlaces en el pie de página */
+.link {
+    align-items: center;  
+    display: flex;
+    text-align: center;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Línea vertical en el pie de página */
+.linea-2 {
+   
+    border-left: 3px solid #4E1945; 
+    height: 150px; 
+    margin-bottom: 20px;
+}
+
+/* Bloque de contenido en el centro del pie de página */
+.center-block {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Línea horizontal en el pie de página */
+.linea {
+    border-top: 2px solid #4E1945; 
+    width: 380px;
+    margin: 20px auto 0;
+}
+
+/* Estilos de los encabezados en el pie de página */
+.link h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #4E1945;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.link a {
+    font-family:'Roboto', sans-serif;
+    font-size: 14px;
+    color: #4E1945;
+    display: block;
+    margin-bottom: 5px;
+    height: 25px; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    text-align: left;
+}
+.link i {
+    font-size: 20px; 
+    margin-right: 5px; 
+    color:  #4E1945;
+}
+
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+    background-color: #4E1945;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center; 
+}
