@@ -1,0 +1,292 @@
+
+/* Reset de estilos y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* Estilos del cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8efea;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilos de Grupos */
+.background-group {
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.overlap-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+.overlap-group img {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    height: 100%; /* Establece la altura al 100% del contenedor */
+    object-fit: cover; /* Opcional: ajusta el tamaño de la imagen para llenar el contenedor sin distorsiones */
+}
+
+
+
+.form {
+    position: absolute;
+    z-index: 1; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: #FCE8F3;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 600px; 
+    padding: 4.5em 3em 40px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+/* " " Titulo Inicio de Sesion*/
+.form__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #4E1945;
+}
+.form__logo {
+    text-align: center; 
+}
+
+.logo {
+    max-width: 100px; 
+}
+/* " " Parrafo RecordarContraseña - ¿TodaviaNoTienesCuenta?*/
+.form__paragraph {
+    font-weight: 300;
+    color: #4E1945;
+}
+/*" " Enlaces ¿OlvidasteLaContraseña? - Registrarse*/
+/* Estilos para enlaces no visitados */
+/* Estilos para enlaces no visitados */
+.form__link {
+    font-weight: 600;
+    color: #4E1945;
+}
+
+/* Estilos para enlaces visitados */
+.form__link:hover {
+    color: #4E1945; 
+}
+
+/* Estilos para enlaces cuando se hace clic */
+.form__link:active {
+    color:  #4E1945; 
+}
+/* Estilos del contenedor principal del formulario * User - Password - Submit - Parrafo - Link*/
+.form__container {
+    margin-top: 3em;
+    width: 80%; 
+    margin: 0 auto; 
+    display: grid;
+    gap: 5px;
+}
+
+/* " " Grupo Nombre de Usuario - Contraseña*/
+.form__group {
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    margin-top: 25px;
+}
+
+ /*" " Contenedores de entrada de texto Password - User*/
+.input-container {
+    flex: 1; 
+}
+
+ /*" " Contenedores de entrada de texto Password - User*/
+.form__input {
+    width: 100%;
+    background: none;
+    color: #4E1945;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #4E1945;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/*Entrada de texto Password - User */
+.form__input:not(:placeholder-shown) {
+    color: #4E1945;
+    
+}
+
+.form__input:focus + .form__label, 
+.form__input:not(:placeholder-shown) + .form__label {
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+    color: #4E1945;
+}
+/*Etiqueta de Forulario*/
+.form__label{
+    color: #4E1945;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform 0.5s, color 0.3s;
+    font-size: 20px;
+}
+/* "" Iconos User - Key*/
+.icon-container{
+    margin-right: 0px; 
+}
+.icon-container i {
+    font-size: 35px; 
+    margin-right: 10px; 
+    color: #4E1945; 
+    cursor: pointer;
+
+}
+
+/* Estilos para el checkbox "Recordar contraseña" */
+
+
+.form__group.forget {
+    text-align: left;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.form__group.forget label {
+    display: flex;
+    align-items: center;
+    
+}
+.form__group.forget .form__checkbox {
+    display: none; 
+}
+
+.custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #4E1945;
+    border-radius: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-checkbox::before {
+    content: "✔"; 
+    color: transparent; 
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.form__group.forget input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #4E1945; 
+    border: #231f20;
+}
+
+.form__group.forget input[type="checkbox"]:checked + .custom-checkbox::before {
+    color: #f8efea; 
+    opacity: 1;
+}
+/**/
+
+.form__group.forget .form__paragraph {
+    margin-left: 5px;
+}
+
+/* "" Boton de Ingreso*/
+.form__submit {
+    background-color: #f8efea;
+    color: #4E1945;
+    border: 2px solid #4E1945; 
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; 
+    font-weight: 600;
+    padding: 10px;
+    width: 160px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 30px auto 15px;
+}
+
+
+.form__submit:hover {
+    background-color: #4E1945;
+    color: #f8efea;
+}
+
+/*Linea de Formulario*/
+
+.form__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px; 
+    background-color: #4E1945;
+    transition: border-color 0.3s;
+}
+
+.form__input:focus ~ .form__line, .form__input:not(:placeholder-shown) ~ .form__line {
+    transform: scaleX(1); 
+    background-color: #4E1945; 
+    height: 2px; 
+}
+
+
+/*Estilo Iconos de Redes Sociales*/
+
+.social-icons {
+    padding-top: 30px; 
+}
+
+.social-icons a i{
+    font-size: 35px;
+    color: #4E1945;
+    margin-right: 25px;
+    transition: 0.5s ease;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+.social-icons a:hover i{
+    transform: scale(1.5); 
+}
+/**/
+
+
+/* Otros estilos para el footer, como márgenes, alineación, etc. */
+@media (max-width:425px) {
+    .form__title{
+        font-size: 1.8rem; 
+        
+    }
+}
+
+
