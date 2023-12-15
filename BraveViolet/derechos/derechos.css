@@ -1,0 +1,623 @@
+/* --------------------------------- Estilos Globales --------------------------------- */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:  'Roboto', sans-serif;
+    background-color: #fff;
+}
+/* --------------------------------- Encabezado (Header) --------------------------------- */
+.top {
+    background-color: #4E1945;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.menu{
+    width: 100%; 
+    top:0; 
+    left:0; 
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* --------------------------------- Menú (Navbar) --------------------------------- */
+.menu .navbar{
+    width: 50%; 
+}
+.menu .navbar .menu-list .menu-item{
+    width: 20%;
+    position: relative; 
+    float:left;  
+    text-align: center;
+}
+.menu .navbar .menu-list .menu-item .menu-link {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px 0 10px 0; 
+    color: #3E083F;
+    display: block;
+    font-weight: 600;
+   
+}
+.navbar .menu-link::after{
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #3E083F; 
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s
+}
+
+.navbar .menu-link:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* --------------------------------- Barra de busqueda (Navsearch) --------------------------------- */
+.search-bar {
+    width: 340px;
+    height: 35px;
+    background: transparent;
+    border: 3px solid #3E083F;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    margin: 0 20 0 325px;
+}
+/* ----------------------- Ingreso de Texto de Barra de Busqueda -------------------------- */
+.search-bar input{
+    width: 100%; 
+    background: transparent;
+    border: none; 
+    outline: none;
+    font-size: 16px;
+    color:  #3E083F; 
+    padding-left: 10px;
+}
+.search-bar input::placeholder{
+    color: #3E083F; 
+}
+/* --------------------------------- Botón de Búsqueda --------------------------------- */
+.search-bar button{
+    width: 40px; 
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+.search-bar button i{
+    font-size: 22px;
+    color:  #3E083F;
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width:25px ;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: right;
+    margin: 0px 40px 0px 610px;
+}
+
+/* --------------------------------- Cuerpo de la Pagina --------------------------------- */
+
+/*Estilos Descripcion */
+.TUS-DERECHOS {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.TUS-DERECHOS .descripcion {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 4152px;
+    position: relative;
+    margin: auto;
+}
+
+.TUS-DERECHOS .rectangle {
+    width: 1706px;
+    height: 504px;
+    top: -5503px;
+    background-color: #d9d9d9;
+    position: absolute;
+    left: 0;
+}
+
+.TUS-DERECHOS .titulo {
+    position: absolute;
+    width: 847px;
+    top: 142px;
+    left: 100px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4e1945;
+    font-size: 60px;
+    letter-spacing: 0.6px;
+    line-height: 65.3px;
+    white-space: nowrap;
+}
+
+.TUS-DERECHOS .presentacion {
+    position: absolute;
+    width: 1440px;
+    height: 1436px;
+    top: 215px;
+    left: 0;
+}
+
+.TUS-DERECHOS .texto {
+    position: absolute;
+    width: 603px;
+    top: 34px;
+    left: 100px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.18px;
+    line-height: 28.6px;
+}
+
+.TUS-DERECHOS .component {
+    position: absolute;
+    width: 608px;
+    height: 238px;
+    top: 383px;
+    left: 100px;
+}
+
+.TUS-DERECHOS .tu-vida-tu-libertad {
+    position: absolute;
+    width: 565px;
+    top: -1px;
+    left: 43px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 36px;
+}
+
+.TUS-DERECHOS .modo-de-aislamiento {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    top: 10px;
+    left: 0;
+}
+
+.TUS-DERECHOS .img {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    top: 44px;
+    left: 0;
+}
+
+.TUS-DERECHOS .modo-de-aislamiento-2 {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    top: 78px;
+    left: 0;
+}
+
+.TUS-DERECHOS .modo-de-aislamiento-3 {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    top: 112px;
+    left: 0;
+}
+
+.TUS-DERECHOS .modo-de-aislamiento-4 {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    top: 146px;
+    left: 0;
+}
+
+.TUS-DERECHOS .modo-de-aislamiento-5 {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    top: 180px;
+    left: 0;
+}
+
+.TUS-DERECHOS .modo-de-aislamiento-6 {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    top: 214px;
+    left: 0;
+}
+
+/*Estilos Seccion1 */
+.TUS-DERECHOS .seccion1 {
+    position: absolute;
+    width: 1440px;
+    height: 1436px;
+    top: 0;
+    left: 0;
+}
+
+.TUS-DERECHOS .capa {
+    position: absolute;
+    width: 732px;
+    height: 910px;
+    top: 0;
+    left: 708px;
+}
+
+.TUS-DERECHOS .rectangulo1 {
+    width: 1440px;
+    height: 757px;
+    top: 679px;
+    background-color: #263238;
+    position: absolute;
+    left: 0;
+}
+
+.TUS-DERECHOS .texto-1 {
+    width: 730px;
+    top: 915px;
+    left: 91px;
+    color: #ffffff;
+    text-align: justify;
+    position: absolute;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 28.6px;
+}
+
+.TUS-DERECHOS .titulo1 {
+    position: absolute;
+    width: 1041px;
+    top: 749px;
+    left: 102px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ba97c6;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    line-height: 54.4px;
+}
+
+.TUS-DERECHOS .vector1 {
+    position: absolute;
+    width: 409px;
+    height: 537px;
+    top: 864px;
+    left: 1000px;
+}
+
+.TUS-DERECHOS .imagen1 {
+    width: 416px;
+    height: 348px;
+    top: 971px;
+    left: 969px;
+    position: absolute;
+    object-fit: cover;
+}
+
+/*Estilos Seccion2 */
+.TUS-DERECHOS .seccion2 {
+    position: absolute;
+    width: 1440px;
+    height: 757px;
+    top: 1651px;
+    left: 0;
+    background-color: #801e68;
+}
+
+.TUS-DERECHOS .rectangle-2 {
+    width: 1440px;
+    height: 757px;
+    top: 679px;
+    background-color: #263238;
+    position: absolute;
+    left: 0;
+}
+
+.TUS-DERECHOS .titulo2 {
+    position: absolute;
+    width: 961px;
+    top: 56px;
+    left: 102px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ba97c6;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    line-height: 54.4px;
+}
+
+.TUS-DERECHOS .texto-2 {
+    width: 757px;
+    top: 225px;
+    left: 91px;
+    color: #ffffff;
+    text-align: justify;
+    position: absolute;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 28.6px;
+}
+
+.TUS-DERECHOS .vector2 {
+    position: absolute;
+    width: 531px;
+    height: 451px;
+    top: 175px;
+    left: 909px;
+    background-image: url(./img/vector.svg);
+    background-size: 100% 100%;
+}
+
+.TUS-DERECHOS .imagen2 {
+    position: absolute;
+    width: 485px;
+    height: 319px;
+    top: 51px;
+    left: 24px;
+    object-fit: cover;
+}
+
+/*Estilos Seccion3 */
+
+.TUS-DERECHOS .seccion3 {
+    position: absolute;
+    width: 1440px;
+    height: 757px;
+    top: 2408px;
+    left: 0;
+    background-color: #fce8f3;
+}
+
+.TUS-DERECHOS .titulo3 {
+    position: absolute;
+    width: 831px;
+    top: 72px;
+    left: 102px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4e1945;
+    font-size: 60px;
+    letter-spacing: 0.6px;
+    line-height: 65.3px;
+    white-space: nowrap;
+}
+
+.TUS-DERECHOS .texto-3 {
+    width: 756px;
+    top: 213px;
+    left: 92px;
+    color: #010101;
+    text-align: justify;
+    position: absolute;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 28.6px;
+}
+
+.TUS-DERECHOS .img-s3 {
+    position: absolute;
+    width: 501px;
+    height: 443px;
+    top: 161px;
+    left: 917px;
+}
+
+.TUS-DERECHOS .modo-de-aislamiento-7 {
+    position: absolute;
+    width: 445px;
+    height: 443px;
+    top: 0;
+    left: 36px;
+}
+
+.TUS-DERECHOS .image-2 {
+    width: 501px;
+    height: 322px;
+    top: 67px;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* Estilos Seccion 04 */
+.TUS-DERECHOS .seccion4 {
+    position: absolute;
+    width: 1440px;
+    height: 757px;
+    top: 3270px;
+    left: 30px;
+}
+
+.TUS-DERECHOS .rectangulo4 {
+    width: 1440px;
+    height: 757px;
+    top: 0px;
+    background-color: #263238;
+    position: absolute;
+    left: 0;
+}
+
+.TUS-DERECHOS .texto-4 {
+    width: 800px;
+    top: 279px;
+    left: 117px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 28.6px;
+}
+
+.TUS-DERECHOS .titulo4 {
+    position: absolute;
+    width: 1041px;
+    top: 71px;
+    left: 102px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ba97c6;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    line-height: 54.4px;
+}
+
+
+.TUS-DERECHOS .vector4 {
+    position: absolute;
+    width: 409px;
+    height: 537px;
+    top: 125px;
+    left: 1000px;
+}
+
+.TUS-DERECHOS .imagen4 {
+    width: 416px;
+    height: 348px;
+    top: 225px;
+    left: 969px;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* --------------------------------- Pie de pagina --------------------------------- */
+.footer{
+    padding: 30px 0;
+    background-color: #B895C5;  
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    margin: 0px 0px 30px 50px; 
+}
+
+/* Contenido del pie de página */
+.footer-content{
+    display: flex;
+    justify-content: flex-end; 
+    text-align: center;
+    margin: 0px 100px 0px 100px ; 
+    width: 100%; 
+    
+}
+
+/* Enlaces en el pie de página */
+.link {
+    align-items: center;  
+    display: flex;
+    text-align: center;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Línea vertical en el pie de página */
+.linea-2 {
+   
+    border-left: 3px solid #4E1945; 
+    height: 150px; 
+    margin-bottom: 20px;
+}
+
+/* Bloque de contenido en el centro del pie de página */
+.center-block {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Línea horizontal en el pie de página */
+.linea {
+    border-top: 2px solid #4E1945; 
+    width: 380px;
+    margin: 20px auto 0;
+}
+
+/* Estilos de los encabezados en el pie de página */
+.link h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #4E1945;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.link a {
+    font-family:'Roboto', sans-serif;
+    font-size: 14px;
+    color: #4E1945;
+    display: block;
+    margin-bottom: 5px;
+    height: 25px; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    text-align: left;
+}
+
+.link i {
+    font-size: 20px; 
+    margin-right: 5px; 
+    color:  #4E1945;
+}
+
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+    background-color: #4E1945;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center; 
+}
