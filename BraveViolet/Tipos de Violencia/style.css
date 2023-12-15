@@ -1,0 +1,154 @@
+.barra-de-opciones {
+    width: 900px;
+    height: 45px;
+}
+
+.barra-de-opciones .overlap-group {
+    position: relative;
+    height: 45px;
+}
+
+.barra-de-opciones .navbar {
+    position: absolute;
+    width: 900px;
+    height: 42px;
+    top: 0;
+    left: 0;
+}
+
+.barra-de-opciones .text-wrapper {
+    left: 0;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    position: absolute;
+    width: 150px;
+    height: 42px;
+    top: -1px;
+    color: #3e083f;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.barra-de-opciones .div {
+    left: 150px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    position: absolute;
+    width: 150px;
+    height: 42px;
+    top: -1px;
+    color: #3e083f;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.barra-de-opciones .particip {
+    left: 300px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    position: absolute;
+    width: 150px;
+    height: 42px;
+    top: -1px;
+    color: #3e083f;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.barra-de-opciones .noticias {
+    left: 450px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    position: absolute;
+    width: 150px;
+    height: 42px;
+    top: -1px;
+    color: #3e083f;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.barra-de-opciones .historias {
+    left: 600px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    position: absolute;
+    width: 150px;
+    height: 42px;
+    top: -1px;
+    color: #3e083f;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.barra-de-opciones .con-cenos {
+    left: 750px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    position: absolute;
+    width: 150px;
+    height: 42px;
+    top: -1px;
+    color: #3e083f;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.barra-de-opciones .line {
+    position: absolute;
+    width: 110px;
+    height: 5px;
+    top: 40px;
+    left: 22px;
+}
+.label {
+    width: 847px;
+    height: 72px;
+}
+
+.label .text-wrapper {
+    position: relative;
+    width: 847px;
+    top: 0;
+    left: 0;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 500;
+    color: #4e1945;
+    font-size: 60px;
+    letter-spacing: 0.6px;
+    line-height: 65.3px;
+    white-space: nowrap;
+}
+
+.label .para-pedir-medidas {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.18px;
+    line-height: 28.6px;
+    }
+.label .text-wrapper {
+        color: #4e1945;
+        }
+
+.label .span {
+        font-family: "Roboto-Bold", Helvetica;
+        font-weight: 600px;
+        color: #4e1945;
+            }
