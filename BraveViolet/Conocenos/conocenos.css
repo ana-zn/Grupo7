@@ -1,0 +1,339 @@
+/* --------------------------------- Estilos Globales --------------------------------- */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:  'Roboto', sans-serif;
+    background-color: #fff;
+}
+/* --------------------------------- Encabezado (Header) --------------------------------- */
+.top {
+    background-color: #4E1945;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.menu{
+    width: 100%; 
+    top:0; 
+    left:0; 
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px; /* Adjust the height as needed */
+}
+
+.centered-container {
+    text-align: center;
+}
+/* --------------------------------- Menú (Navbar) --------------------------------- */
+.menu .navbar{
+    width: 50%; 
+    margin-bottom: 30px;
+}
+.menu .navbar .menu-list .menu-item{
+    width: 20%;
+    position: relative; 
+    float:left;  
+    text-align: center;
+}
+.menu .navbar .menu-list .menu-item .menu-link {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px 0 10px 0; 
+    color: #3E083F;
+    display: block;
+    font-weight: 600;
+   
+}
+.navbar .menu-link::after{
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #3E083F; 
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s
+}
+
+.navbar .menu-link:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* --------------------------------- Barra de busqueda (Navsearch) --------------------------------- */
+.search-bar {
+    width: 340px;
+    height: 35px;
+    background: transparent;
+    border: 3px solid #3E083F;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    margin: 0 20 0 325px;
+}
+/* ----------------------- Ingreso de Texto de Barra de Busqueda -------------------------- */
+.search-bar input{
+    width: 100%; 
+    background: transparent;
+    border: none; 
+    outline: none;
+    font-size: 16px;
+    color:  #3E083F; 
+    padding-left: 10px;
+}
+.search-bar input::placeholder{
+    color: #3E083F; 
+}
+/* --------------------------------- Botón de Búsqueda --------------------------------- */
+.search-bar button{
+    width: 40px; 
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+.search-bar button i{
+    font-size: 22px;
+    color:  #3E083F;
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width:25px ;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: right;
+    margin: 0px 40px 0px 610px;
+}
+/* --------------------------------- Section Box --------------------------------- */
+
+.contenedor-box{
+    display: flex;
+    background-color: #B895C5;
+    height: 800px;
+    align-items: center;
+    padding: 0px 60px;
+}
+@media(min-width: 768px) {
+    .contenedor-box{
+        display: flex;
+        justify-content: space-between;
+    }   
+}
+.texto-box, .imagenes-box{
+   
+    flex: 0 0 calc(50% - 1rem) ;
+}
+
+@media(min-width: 768px) {
+    .texto-box .bienvenida{
+        text-align: left;
+    }
+}
+.texto-box h1{
+    width: 632px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #3e083f;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    margin: 20px 0px;
+}
+.texto-box .bienvenida{
+    font-family: "Roboto-Bold", Helvetica;
+    color:#3e083f; 
+    font-weight: 700;
+    font-size: 36px;
+    margin: 40px auto;
+}
+
+@media(min-width: 768px) {
+    .texto-box h1{
+        text-align: left;
+    }
+}
+.texto-box p{
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    color: #263238;
+    font-size: 18px;
+}
+@media(min-width: 768px) {
+    .texto-box p{
+        text-align: left;
+    }
+}
+.imagenes-box img,
+.imagen1 img,
+.imagen2 img {
+    width: 100%; /* O ajusta el porcentaje que desees */
+    max-width: 100%; /* Para asegurarte de que no se estiren más allá de su tamaño original */
+    height: auto; /* Para mantener la proporción original de la imagen */
+}
+.imagenes-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen1, .imagenes2{
+    flex: 0 0 calc(50% - 1rem);
+}
+.imagenes2 img{
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.grilla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+
+.item {
+    align-items: center;  
+    display: flex;
+    text-align: center;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item img {
+    width: 55%; /* O ajusta el porcentaje que desees */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 40px;
+}
+
+.item p {
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #263238;
+    font-size: 18px;
+    margin: 20px;
+}
+
+/* --------------------------------- Pie de pagina --------------------------------- */
+.footer{
+    padding: 30px 0;
+    background-color: #B895C5;  
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.footer img {
+    margin: 0px 0px 30px 50px; /* Puedes ajustar el valor según tus necesidades */
+}
+/* Contenido del pie de página */
+.footer-content{
+    display: flex;
+    justify-content: flex-end; 
+    text-align: center;
+    margin: 0px 100px 0px 100px ; 
+    width: 100%; 
+    
+}
+
+/* Enlaces en el pie de página */
+.link {
+    align-items: center;  
+    display: flex;
+    text-align: center;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Línea vertical en el pie de página */
+.linea-2 {
+   
+    border-left: 3px solid #4E1945; 
+    height: 150px; 
+    margin-bottom: 20px;
+}
+
+/* Bloque de contenido en el centro del pie de página */
+.center-block {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Línea horizontal en el pie de página */
+.linea {
+    border-top: 2px solid #4E1945; 
+    width: 380px;
+    margin: 20px auto 0;
+}
+
+/* Estilos de los encabezados en el pie de página */
+.link h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #4E1945;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.link a {
+    font-family:'Roboto', sans-serif;
+    font-size: 14px;
+    color: #4E1945;
+    display: block;
+    margin-bottom: 5px;
+    height: 25px; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    text-align: left;
+}
+.link i {
+    font-size: 20px; 
+    margin-right: 5px; 
+    color:  #4E1945;
+}
+
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+    background-color: #4E1945;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center; 
+}
