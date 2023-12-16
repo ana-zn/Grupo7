@@ -1,0 +1,146 @@
+/* --------------------------------- Estilos Globales --------------------------------- */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:  'Roboto', sans-serif;
+    background-color: #fff;
+}
+/* --------------------------------- Encabezado (Header) --------------------------------- */
+ .luz-en-la-superacion  {
+    // La luz en la superación
+    color: white;
+     font-size: 60px;
+     font-family: Roboto;
+     font-style: italic;
+     font-weight: 600;
+     word-wrap: break-word
+    ---
+    // Soy
+    color: #263238;
+     font-size: 18px;
+     font-family: Roboto;
+     font-weight: 400;
+     line-height: 27px;
+     word-wrap: break-word
+    ---
+    //  Maria Martinez,
+    color: #263238;
+     font-size: 18px;
+     font-family: Roboto;
+     font-weight: 700;
+     line-height: 27px;
+     word-wrap: break-word
+    ---
+    //  una sobreviviente que encontró fuerza en medio de la oscuridad. La violencia intentó apagar mi luz, pero aquí estoy, reconstruyendo mi vida. Gracias al apoyo de personas compasivas y recursos especializados, he aprendido a sanar. Mi testimonio es un recordatorio de que la esperanza puede surgir incluso en los momentos más difíciles. Juntas, podemos superar la violencia y construir un futuro de resiliencia y amor.
+    color: #263238;
+     font-size: 18px;
+     font-family: Roboto;
+     font-weight: 400;
+     line-height: 27px;
+     word-wrap: break-word
+    ---
+    // “
+    color: white;
+     font-size: 150px;
+     font-family: Righteous;
+     font-weight: 400;
+     word-wrap: break-word
+    ---
+    // San Rafael, Mendoza
+    color: #263238;
+     font-size: 18px;
+     font-family: Roboto;
+     font-weight: 400;
+     line-height: 27px;
+     word-wrap: break-word
+}
+
+
+.footer{
+    padding: 30px 0;
+    background-color: #B895C5;  
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido del pie de página */
+.footer-content{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    margin: 0px 100px 0px 100px ; 
+    width: 100%; 
+}
+
+/* Enlaces en el pie de página */
+.link {
+    align-items: center;  
+    display: inline-block;
+    text-align: center;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Línea vertical en el pie de página */
+.linea-2 {
+   
+    border-left: 3px solid #4E1945; 
+    height: 105px; 
+    margin-bottom: 20px;
+}
+
+/* Bloque de contenido en el centro del pie de página */
+.center-block {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Línea horizontal en el pie de página */
+.linea {
+    border-top: 2px solid #4E1945; 
+    width: 380px;
+    margin: 20px auto 0;
+}
+
+/* Estilos de los encabezados en el pie de página */
+.link h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #4E1945;
+    margin-bottom: 15px;
+}
+.link a {
+    font-family:'Roboto', sans-serif;
+    font-size: 14px;
+    color: #4E1945;
+    display: block;
+    margin-bottom: 5px;
+    height: 25px; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+}
+.link i {
+    font-size: 20px; 
+    margin-right: 5px; 
+    color:  #4E1945;
+}
+
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+    background-color: #4E1945;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center; 
+}
